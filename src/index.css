@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  @apply tracking-wide;
+}
+body {
+  box-sizing: border-box;
+}
