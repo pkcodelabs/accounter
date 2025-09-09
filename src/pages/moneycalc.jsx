@@ -78,7 +78,7 @@ function MoneyCalculator() {
           onClick={createNewNote}
           className="bg-[#34D399]  px-4 my-4 md:my-0 py-2 rounded"
         >
-          ➕ Add New Note
+          ➕
         </button>
       </div>
 
@@ -168,7 +168,7 @@ function KeepNoteInputs({ noteId, noteMeta, onSave }) {
       <h3 className="text-lg  font-semibold mb-2">
         <div className=" flex justify-between">
           <div> {noteMeta.name} </div>
-          <div className=" text-sm">
+          <div className=" text-xs">
             {new Date(noteMeta.date).toLocaleDateString("en-GB", {
               day: "numeric",
               month: "long",
