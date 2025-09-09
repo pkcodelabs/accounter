@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 
 // import "easzy-form/dist/index.css";
 import Home from "./pages/home";
@@ -7,8 +7,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="p-4">
+        <Link to="moneytransfer">monet transfer</Link>
         <Routes>
-          <Route path="/home" element={<Home />} />{" "}
+          <Route path="/" element={<Home />} />{" "}
           <Route path="/moneytransfer" element={<MoneyTransfer />} />{" "}
         </Routes>
       </div>
